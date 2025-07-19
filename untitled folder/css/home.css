@@ -1,0 +1,92 @@
+:root {
+      --main-color: #111;
+      --accent-color: #00adb5;
+      --background-color: #f9f9f9;
+      --text-color: #333;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: var(--background-color);
+      color: var(--text-color);
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      padding: 3rem 0;
+    }
+
+    header img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+      margin-bottom: 1rem;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: var(--main-color);
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: var(--accent-color);
+    }
+
+    section {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      border-bottom: 2px solid var(--accent-color);
+      display: inline-block;
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+      color: var(--main-color);
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    li {
+      margin-bottom: 0.8rem;
+      padding-left: 1rem;
+      position: relative;
+    }
+
+    li::before {
+      content: "\2022";
+      position: absolute;
+      left: 0;
+      color: var(--accent-color);
+    }
+
+    a {
+      color: var(--accent-color);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #888;
+      margin-top: 50px;
+    }
